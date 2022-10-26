@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+
+
+  p {
+        text-align: justify;
+        text-indent: 50px;
+    }
+    body{
+       /* background-image: url("xxx.png");*/ 
+       font-family: Arial,  sans-serif;
+              background-color: #dddddd;
+              color: rgba(0, 0, 0, 1);
+    }
+a {
+   text-decoration: none;
+   color: #888888; 
+   text-decoration: u;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+ /* aqui esta o container de todo o site */
+div#interface {    
+width: 900px;
+background-color: #ffffff;
+margin: -20px auto 0px auto;
+box-shadow: 0px 0px 10px black;
+padding: 10px;
+}
+
+
+    /* formatacao de legendas de fotos*/
+    figure.foto-legenda {
+
+        /* position: relative; Isso ativa limites para que o texto figcapition fique sobre a foto  */
+        position: relative; 
+        border: 8px solid rgb(255, 255, 255);
+        box-shadow: 1px 1px 4px ;
+    }
+
+    figure.foto-legenda img {
+        width: 100%;
+        height: 100%;
+    }
+
+    figure.foto-legenda figcaption {
+        /* position: absolute; define que o texto ficara posicionado em realacao a figure */
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    figure.foto-legenda:hover figcaption {
+        opacity: 1;
+    }
+    
+    /* formatacao do MENU */
+
+nav#menu {
+    display: block;
+}
+
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: relative;
+        top: -120px;
+        left: 250px;
+        
+      
+        
+    }
+    nav#menu li {
+        display: inline-block;
+        background-color: #dddd;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s;
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+-webkit-transition: background-color 1s;-o-transition: background-color 1s;transition: background-color 1s;
+    }
+ 
+    nav#menu h1{
+        /* Esconda mas Nao apague o h1 pois ele é importante para os mecanismos de busca */
+    display: none;
+    }
+    /* mudar fundo dos botoes */
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+position: absolute;
+top: 50px;
+margin-left: 700px;
+
+}
+
+header#cabecalho {
+    border-bottom: 1PX #606060 SOLID;
+height: 150PX;
+background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+font-size: 30pt;
+color: #606060;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+padding: 0px;
+margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+padding: 0px;
+margin-top: 0px;
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid#606060;
+    padding-right: 20px;
+}
+ aside#lateral {
+     display: block;
+     width: 350px;
+     float: right;
+     background-color: #dddddd;
+     padding: 10px;
+     margin-top: 10px;
+     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+ }
+aside#lateral h1 {
+    font-family: 'Fontelogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+
+ footer#rodape {
+     clear: both  ;
+     border-top: 1px solid #606060 ;
+ }
+
+ footer#rodape p {
+     text-align: center;
+     padding-right: px;
+ }
+ footer#rodape a {
+     font-family: Arial, sans-serif ;
+     font-size: 10pt;
+     color: rgb(0, 38, 255);
+     text-decoration: none;
+     
+ }
+ footer#rodape a:hover {
+     background-color: rgba(0, 110, 253, 0.411);
+      }
+
+      table#tabelaspec {
+          border: 1px solid #606060;
+          border-spacing: 0px;
+          margin: auto;
+      }
+      table#tabelaspec td {
+          border: 1px solid #606060;
+          padding: 10px;
+          text-align: center;
+          vertical-align: top;
+      }
+
+      table#tabelaspec td.ce {
+          color: #ffffff;
+          background-color: #606060;
+vertical-align: top; 
+font-weight: bold;
+text-align: right;
+        }
+      table#tabelaspec td.cd {
+          color: black;
+          background-color: #cecece;
+
+      }
+table#tabelaspec caption {
+color: #888888;
+font-size: 13pt;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right ;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header#cabecalho-artigo h2 {
+    
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+header#cabecalho-artigo h3 {
+    
+    font-size: 12px;
+    color: #606060;
+    
+}
+ /* cria uma classe generica onde tudo que for declarado com classe direita sera lainhado a direita */
+.direita {
+    text-align: right;
+}
+
